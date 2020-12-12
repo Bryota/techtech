@@ -1,0 +1,35 @@
+/* lib */
+
+
+/* index */
+.logo_text{
+    font-size: 15px;
+}
+
+.post-content-subtitle{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.editor_text{
+    width: 80%;
+    margin: 10px auto 0;
+    font-size: 12px;
+}
+
+@media (max-width: 376px){
+    .sp_mt-50{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 376px){
+    .sp_only{
+        display: none;
+    }
+    .logo_text{
+        margin-left: 10px;
+    }
+}
+
