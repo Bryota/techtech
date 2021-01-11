@@ -14,6 +14,7 @@
         </div>
         <!-- Main wrapper end -->
         <!-- ALL JS HERE -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="<?php echo get_template_directory_uri();?>/js/vendor/jquery-1.12.0.min.js"></script>
         <script src="<?php echo get_template_directory_uri();?>/js/bootstrap.min.js"></script>
         <script src="<?php echo get_template_directory_uri();?>/js/jquery.isotope.js"></script>

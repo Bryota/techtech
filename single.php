@@ -13,6 +13,8 @@
                                     $cat = $category[0];
                                     $cat_name = $cat->name;
                                     $cat_id = $cat->cat_ID;
+                                    $prev_post = get_previous_post();
+                                    $next_post = get_next_post(); // 次の投稿を取得
                                     ?>
                                 <div class="breadcrumb-content">
                                     <h1 class="page-cat"><?php the_title();?></h1>
@@ -42,18 +44,19 @@
                                                 </div>
                                             </header>
                                             <section>
+                                                <h2>やりたいこと</h2>
                                                 <?php the_content();?>
                                             </section>
                                         </div>
-                                    </article>           
-                                    <?php
-                                        endwhile;
-                                        endif;
-                                    ?>            
+                                    </article>                    
                                 <div class="post-navigation-wrapper">
-                                    <a href="#" class="post-navigation previous-post"><i class="fa fa-angle-left"></i>前へ</a>
-                                    <a href="#" class="post-navigation next-post">次へ<i class="fa fa-angle-right"></i></a>
-                                </div>                                           
+                                    <a href="<?php echo get_permalink( $prev_post->ID ); ?>" class="post-navigation previous-post"><i class="fa fa-angle-left"></i>前へ</a>
+                                    <a href="<?php echo get_permalink( $next_post->ID ); ?>" class="post-navigation next-post">次へ<i class="fa fa-angle-right"></i></a>
+                                </div>
+                                <?php
+                                    endwhile;
+                                    endif;
+                                ?>                                              
                             </div>
                             <div class="col-lg-3 col-md-4">
                                 <?php get_sidebar('single');?>

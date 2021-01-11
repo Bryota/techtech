@@ -1946,6 +1946,7 @@ transition-duration: 0.6s;
 .post-content {
   background: #fff none repeat scroll 0 0;
   padding: 30px 25px 20px 25px;
+  word-break: break-all;
 }
 .post-content h3 {
   font-size: 20px;
@@ -2385,6 +2386,7 @@ input:focus,
 }
 .widget-post-content p{
   margin: 0;
+  word-break: break-all;
 }
 .widget-single-post {
   margin-bottom: 20px;
