@@ -6,7 +6,7 @@
                     <ul class="portfolio-filter hover-style-one">
                     <li class="active"><a href="<?php echo home_url(); ?>" >トップページ</a></li>
                     <?php
-                        $categories = get_the_category();
+                        $categories = get_categories('exclude=5');
                         foreach($categories as $cat) {?>
                         <?php $link = get_category_link($cat->term_id);?>
                         <li><a href="<?php echo $link;?>"><?php echo $cat->name;?></a></li>
@@ -73,7 +73,41 @@
                                             <div class="col-md-12  mb-20">
                                                 <h3 class="blog_type blog_new text-center">～新着記事～</h3>
                                             </div>
-                                            <?php 
+                                            <?php
+                                                $args = array(
+                                                    'posts_per_page' => 6 // 表示件数の指定
+                                                );
+                                                $posts = get_posts( $args );
+                                                foreach ( $posts as $post ): // ループの開始
+                                                setup_postdata( $post ); // 記事データの取得
+                                                ?>
+                                                <div class="col-md-4 col-sm-6 mb-30">
+                                                <article class="blog-post">
+                                                    <div class="post-thumbnail">
+                                                        <a href="<?php the_permalink();?>"><?php the_post_thumbnail('thumbnail');?></a>
+                                                    </div>
+                                                    <div class="post-content">
+                                                        <div class="post-content-inner">
+                                                            <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+                                                            <ul class="meta-info">
+                                                                <li><?php the_time('Y年m月d日');?> </li>
+                                                            </ul>
+                                                            <p class="post-content-subtitle">これなに？</p>
+                                                            <p><?php echo get_post_meta($post->ID, 'これなに', true);?></p>
+                                                        </div>
+                                                        <div class="post-footer-meta clearfix">
+                                                            <div class="read-more-wrapper">
+                                                                <a href="<?php the_permalink();?>" class="read-more">記事を読む</a>
+                                                            </div>
+                                                        </div>                                        
+                                                    </div>
+                                                </article>
+                                            </div>
+                                                <?php
+                                                endforeach; // ループの終了
+                                                wp_reset_postdata(); // 直前のクエリを復元する
+                                                ?>
+                                            <!-- <?php 
                                                 if(have_posts()):
                                                 while(have_posts()):the_post();
                                             ?>
@@ -102,7 +136,7 @@
                                             <?php 
                                                 endwhile;
                                                 endif;
-                                            ?>
+                                            ?> -->
                                         </div>
                                         <div class="row mt-50">
                                             <div class="col-md-12  mb-20">
