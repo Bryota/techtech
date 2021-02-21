@@ -38,13 +38,12 @@
                                         <?php the_post_thumbnail('large');?>
                                         <div class="post-content">        
                                             <header>
-                                                <h2 class="blog-post-title"><?php the_title();?></h2>
+                                                <h2 class="blog-post-title single-post-title"><?php the_title();?></h2>
                                                 <div class="post-meta">
                                                     <span class="post-time"><?php the_time('Y年m月d日');?></span>
                                                 </div>
                                             </header>
                                             <section>
-                                                <h2>やりたいこと</h2>
                                                 <?php the_content();?>
                                             </section>
                                         </div>
