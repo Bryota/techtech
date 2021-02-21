@@ -31,12 +31,12 @@
                                             ?>
                                             <div class="col-md-4 col-sm-6 mb-30">
                                                 <article class="blog-post">
-                                                    <div class="post-thumbnail">
-                                                        <a href="<?php the_permalink();?>"><img src="http://localhost/wordpress/wp-content/uploads/2020/12/4.jpg" alt=""></a>
+                                                    <div class="post-thumbnail archive-post-thunbnail">
+                                                        <a href="<?php the_permalink();?>"><?php the_post_thumbnail(array(300, 200));?></a>
                                                     </div>
                                                     <div class="post-content">
                                                         <div class="post-content-inner">
-                                                            <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+                                                            <h3 ><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
                                                             <ul class="meta-info">
                                                                 <li><?php the_time('Y年m月d日');?> </li>
                                                             </ul>

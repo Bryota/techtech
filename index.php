@@ -83,10 +83,10 @@
                                                 ?>
                                                 <div class="col-md-4 col-sm-6 mb-30">
                                                 <article class="blog-post">
-                                                    <div class="post-thumbnail">
-                                                        <a href="<?php the_permalink();?>"><?php the_post_thumbnail('thumbnail');?></a>
+                                                    <div class="post-thumbnail new-post-thumbnail">
+                                                        <a href="<?php the_permalink();?>"><?php the_post_thumbnail(array(300, 200));?></a>
                                                     </div>
-                                                    <div class="post-content">
+                                                    <div class="post-content new-post-content">
                                                         <div class="post-content-inner">
                                                             <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
                                                             <ul class="meta-info">

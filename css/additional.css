@@ -36,3 +36,6 @@
 .single-post img {
   height: auto !important;
 }
+.single-post-title {
+  text-transform: none !important;
+}
