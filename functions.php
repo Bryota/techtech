@@ -4,7 +4,7 @@ function post_has_archive( $args, $post_type ) {
  
     if ( 'post' == $post_type ) {
         $args['rewrite'] = true;
-        $args['has_archive'] = 'all'; //任意のスラッグ名
+        $args['has_archive'] = 'all'; 
     }
     return $args;
  
@@ -241,3 +241,27 @@ function insert_custom_js() {
     rewind_posts();
   }
 }
+
+//日付アーカイブページのタイトルタグ修正
+function jp_date_wp_title( $title, $sep, $seplocation ) {
+  if ( is_date() ) {
+    $m = get_query_var('m');
+    if ( $m ) {
+      $year = substr($m, 0, 4);
+      $month = intval(substr($m, 4, 2));
+      $day = intval(substr($m, 6, 2));
+    } else {
+      $year = get_query_var('year');
+      $month = get_query_var('monthnum');
+      $day = get_query_var('day');
+    }
+ 
+    $title = ($seplocation != 'right' ? " $sep " : '') .
+         ($year ? $year . '年' : '') .
+         ($month ? $month . '月' : '') .
+         ($day ? $day . '日' : '') .
+         ($seplocation == 'right' ? " $sep " : '');
+  }
+  return $title;
+}
+add_filter( 'wp_title', 'jp_date_wp_title', 10, 3 );
