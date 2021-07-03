@@ -42,7 +42,7 @@ a:hover {
 a,
 button {
   outline: medium none;
-  color: #4fc1f0;
+  color: #555;;
 }
 .uppercase {
   text-transform: uppercase;
@@ -2281,9 +2281,11 @@ a.button.extra-small {
 .post-content {
   background: #fff none repeat scroll 0 0;
   padding: 30px 25px 20px 25px;
+  min-height: 300px;
   word-break: break-all;
 }
 .new-post-content {
+  min-height: 300px;
   width: 280px;
 }
 .post-content h3 {

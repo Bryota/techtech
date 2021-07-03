@@ -1,8 +1,23 @@
 /* lib */
-
+.d-flex {
+  display: flex;
+  justify-content: space-around;
+}
+.icon-sns {
+  font-size: 30px;
+}
 /* index */
 .logo_text {
   font-size: 15px;
+}
+.icon-twitter {
+  width: 30px;
+}
+.icon-instagram {
+  width: 30px;
+}
+.icon-facebook {
+  width: 30px;
 }
 
 .post-content-subtitle {

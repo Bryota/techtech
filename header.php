@@ -16,6 +16,7 @@
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,100,300,700,900' rel='stylesheet' type='text/css'>
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
         <!-- All CSS FILES -->
         <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/font-awesome.min.css">    

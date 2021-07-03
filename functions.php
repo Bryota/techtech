@@ -103,7 +103,6 @@ class My_WP_Widget_Recent_Posts extends WP_Widget_Recent_Posts {
             <?php the_post_thumbnail(array(80,80));?>
             <div class="widget-post-content">
                 <h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
-                <p><?php echo post_custom('これなに'); ?></p>
             </div>
         </div>
         <?php endwhile; ?>
