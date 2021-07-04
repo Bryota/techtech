@@ -2268,11 +2268,8 @@ a.button.extra-small {
 /*----------------------------------------------
 	6. Blog POST STYLE
 ------------------------------------------------*/
-.new-post-thumbnail,
-.archive-post-thunbnail {
-  height: 200px;
-}
 .post-thumbnail img {
+  max-height: 180px;
   width: 100%;
 }
 .blog-post {
@@ -2286,7 +2283,6 @@ a.button.extra-small {
 }
 .new-post-content {
   min-height: 300px;
-  width: 280px;
 }
 .post-content h3 {
   font-size: 20px;
