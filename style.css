@@ -2272,6 +2272,9 @@ a.button.extra-small {
   max-height: 180px;
   width: 100%;
 }
+.blog_popular_artticle .post-thumbnail img {
+  max-height: inherit;
+}
 .blog-post {
   border: 1px solid #e5e5e5;
 }
@@ -2332,15 +2335,6 @@ a.button.extra-small {
   text-align: right;
   width: 50%;
 }
-/* .post-footer-meta::before {
-  background: #999 none repeat scroll 0 0;
-  content: "";
-  height: 1px;
-  left: 0;
-  position: absolute;
-  top: -10px;
-  width: 35px;
-} */
 .post-content-inner {
   margin-bottom: 35px;
 }

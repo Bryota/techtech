@@ -24,45 +24,23 @@
                                             <div class="col-md-12  mb-20">
                                                 <h3 class="blog_type blog_popular text-center">～人気の記事～</h3>
                                             </div>
-                                            <div class="col-md-8 col-sm-6 ">
+                                            <div class="col-md-12 blog_popular_artticle">
                                                 <article class="blog-post">
                                                     <div class="post-thumbnail">
-                                                        <a href="#"><img src="http://localhost/wordpress/wp-content/uploads/2020/12/4.jpg" alt=""></a>
+                                                        <a href="http://localhost:10004/php/laravel/lifecycle/"><img src="http://localhost:10004/wp-content/uploads/2021/07/laravel-scaled.jpg" alt="アイキャッチ"></a>
                                                     </div>
                                                     <div class="post-content">
                                                         <div class="post-content-inner">
-                                                            <h3><a href="#">LaravelのマルチAuth認証の作り方</a></h3>
+                                                            <h3><a href="http://localhost:10004/php/laravel/lifecycle/">Laravel ライフサイクル 調べてみた</a></h3>
                                                             <ul class="meta-info">
-                                                                <li><a href="#">2020年11月4日</a></li>
+                                                                <li><a href="http://localhost:10004/php/laravel/lifecycle/">2021年07月03日</a></li>
                                                             </ul>
                                                             <p class="post-content-subtitle">これなに？</p>
-                                                            <p>LaravelでマルチAuth認証を作りたい人向けに、作成方法の流れを説明したもの</p>
+                                                            <p>Laravelのライフサイクルを調べてみた</p>
                                                         </div>
                                                         <div class="post-footer-meta clearfix">
                                                             <div class="read-more-wrapper">
-                                                                <a href="#" class="read-more">記事を読む</a>
-                                                            </div>
-                                                        </div>                                        
-                                                    </div>
-                                                </article>
-                                            </div>
-                                            <div class="col-md-4 col-sm-6 ">
-                                                <article class="blog-post">
-                                                    <div class="post-thumbnail">
-                                                        <a href="#"><img src="http://localhost/wordpress/wp-content/uploads/2020/12/4.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="post-content">
-                                                        <div class="post-content-inner">
-                                                            <h3><a href="#">LaravelのマルチAuth認証の作り方</a></h3>
-                                                            <ul class="meta-info">
-                                                                <li><a href="#">2020年11月4日</a></li>
-                                                            </ul>
-                                                            <p class="post-content-subtitle">これなに？</p>
-                                                            <p>LaravelでマルチAuth認証を作りたい人向けに、作成方法の流れを説明したもの</p>
-                                                        </div>
-                                                        <div class="post-footer-meta clearfix">
-                                                            <div class="read-more-wrapper">
-                                                                <a href="#" class="read-more">記事を読む</a>
+                                                                <a href="http://localhost:10004/php/laravel/lifecycle/" class="read-more">記事を読む</a>
                                                             </div>
                                                         </div>                                        
                                                     </div>
@@ -107,36 +85,6 @@
                                                 endforeach; // ループの終了
                                                 wp_reset_postdata(); // 直前のクエリを復元する
                                                 ?>
-                                            <!-- <?php 
-                                                if(have_posts()):
-                                                while(have_posts()):the_post();
-                                            ?>
-                                            <div class="col-md-4 col-sm-6 mb-30">
-                                                <article class="blog-post">
-                                                    <div class="post-thumbnail">
-                                                        <a href="<?php the_permalink();?>"><?php the_post_thumbnail('thumbnail');?></a>
-                                                    </div>
-                                                    <div class="post-content">
-                                                        <div class="post-content-inner">
-                                                            <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
-                                                            <ul class="meta-info">
-                                                                <li><?php the_time('Y年m月d日');?> </li>
-                                                            </ul>
-                                                            <p class="post-content-subtitle">これなに？</p>
-                                                            <p><?php echo get_post_meta($post->ID, 'これなに', true);?></p>
-                                                        </div>
-                                                        <div class="post-footer-meta clearfix">
-                                                            <div class="read-more-wrapper">
-                                                                <a href="<?php the_permalink();?>" class="read-more">記事を読む</a>
-                                                            </div>
-                                                        </div>                                        
-                                                    </div>
-                                                </article>
-                                            </div>
-                                            <?php 
-                                                endwhile;
-                                                endif;
-                                            ?> -->
                                         </div>
                                         <div class="row mt-50">
                                             <div class="col-md-12  mb-20">
@@ -152,12 +100,10 @@
                                                 ));
                                                 global $post;
                                                 if($cat_posts): foreach($cat_posts as $post): setup_postdata($post); ?>
-                                                
-                                                <!-- ループはじめ -->
-                                                <div class="col-md-3 col-sm-6 ">
+                                                <div class="col-md-3 col-sm-6 mb-30 blog_recommend_wrap">
                                                 <article class="blog-post">
                                                     <div class="post-thumbnail">
-                                                        <a href="<?php the_permalink();?>"><?php the_post_thumbnail('thumbnail');?></a>
+                                                        <a href="<?php the_permalink();?>"><?php the_post_thumbnail(array(200, 150));?></a>
                                                     </div>
                                                     <div class="post-content">
                                                         <div class="post-content-inner">
@@ -176,14 +122,13 @@
                                                     </div>
                                                 </article>
                                             </div>
-                                                <!-- ループおわり -->
                                                 
                                             <?php endforeach; endif; wp_reset_postdata(); ?>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4 col-sm-12 sp_mt-50">
+                            <div class="col-lg-3 col-md-4 col-sm-12 sp_mt-50 sidebar-wrap">
                                 <?php get_sidebar('archive');?>
                             </div>
                         </div>

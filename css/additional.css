@@ -32,9 +32,24 @@
   font-size: 12px;
 }
 
+@media (max-width: 769px) {
+  .sp_mt-50 {
+    margin-top: 50px;
+  }
+  .sidebar-wrap {
+    margin-top: 30px;
+  }
+  .blog_recommend_wrap img{
+    height: 200px !important;
+  }
+}
+
 @media (max-width: 376px) {
   .sp_mt-50 {
     margin-top: 50px;
+  }
+  .sidebar-wrap {
+    margin-top: 100px;
   }
 }
 
