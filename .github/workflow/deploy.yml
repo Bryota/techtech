@@ -2,8 +2,7 @@ name: deploy wordpress theme
   
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
   
 jobs:
   deploy:
