@@ -25,6 +25,15 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/responsive.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/additional.css">
+        <!-- GA -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163452531-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-163452531-1');
+        </script>
         <!-- MODERNIZE JS -->
         <script src="<?php echo get_template_directory_uri();?>/js/vendor/modernizr-2.8.3.min.js"></script>
         <?php wp_head();?>
