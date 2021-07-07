@@ -27,20 +27,20 @@
                                             <div class="col-md-12 blog_popular_artticle">
                                                 <article class="blog-post">
                                                     <div class="post-thumbnail">
-                                                        <a href="http://localhost:10004/php/laravel/lifecycle/"><img src="http://localhost:10004/wp-content/uploads/2021/07/laravel-scaled.jpg" alt="アイキャッチ"></a>
+                                                        <a href="/php/laravel/lifecycle/"><img src="/wp-content/uploads/2021/07/laravel-scaled.jpg" alt="アイキャッチ"></a>
                                                     </div>
                                                     <div class="post-content">
                                                         <div class="post-content-inner">
-                                                            <h3><a href="http://localhost:10004/php/laravel/lifecycle/">Laravel ライフサイクル 調べてみた</a></h3>
+                                                            <h3><a href="/php/laravel/lifecycle/">Laravel ライフサイクル 調べてみた</a></h3>
                                                             <ul class="meta-info">
-                                                                <li><a href="http://localhost:10004/php/laravel/lifecycle/">2021年07月03日</a></li>
+                                                                <li><a href="/php/laravel/lifecycle/">2021年07月03日</a></li>
                                                             </ul>
                                                             <p class="post-content-subtitle">これなに？</p>
                                                             <p>Laravelのライフサイクルを調べてみた</p>
                                                         </div>
                                                         <div class="post-footer-meta clearfix">
                                                             <div class="read-more-wrapper">
-                                                                <a href="http://localhost:10004/php/laravel/lifecycle/" class="read-more">記事を読む</a>
+                                                                <a href="/php/laravel/lifecycle/" class="read-more">記事を読む</a>
                                                             </div>
                                                         </div>                                        
                                                     </div>
