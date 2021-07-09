@@ -264,3 +264,11 @@ function jp_date_wp_title( $title, $sep, $seplocation ) {
   return $title;
 }
 add_filter( 'wp_title', 'jp_date_wp_title', 10, 3 );
+  /*header内JS非同期読み込みasync/defer*/
+  function replace_scripttag ( $tag ) {
+      if ( !preg_match( '/b(defer|async)b/', $tag ) ) {
+          return str_replace( "type='text/javascript'", 'defer', $tag );
+      }
+      return $tag;
+  }
+  add_filter( 'script_loader_tag', 'replace_scripttag' );
