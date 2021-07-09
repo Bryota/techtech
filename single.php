@@ -49,8 +49,8 @@
                                         </div>
                                     </article>                    
                                 <div class="post-navigation-wrapper">
-                                    <a href="<?php echo get_permalink( $prev_post->ID ); ?>" class="post-navigation previous-post"><i class="fa fa-angle-left"></i>前へ</a>
-                                    <a href="<?php echo get_permalink( $next_post->ID ); ?>" class="post-navigation next-post">次へ<i class="fa fa-angle-right"></i></a>
+                                    <a href="<?php echo get_permalink( $prev_post->ID ); ?>" class="post-navigation previous-post"><i class="fas fa-arrow-left"></i>前へ</a>
+                                    <a href="<?php echo get_permalink( $next_post->ID ); ?>" class="post-navigation next-post">次へ<i class="fas fa-arrow-right"></i></a>
                                 </div>
                                 <?php
                                     endwhile;

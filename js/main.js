@@ -51,7 +51,7 @@
     /*-------------------------------------------
         SCROLL TO TOP BUTTON
     ---------------------------------------------*/
-	$('body').append('<a id="back-to-top" class="to-top-btn" href="#"><i class="fa fa-angle-up"></i></a>');
+	$('body').append('<a id="back-to-top" class="to-top-btn" href="#"><i class="fas fa-arrow-up"></i></a>');
 	if ($('#back-to-top').length) {
 		var scrollTrigger = 100, // px
 			backToTop = function () {
