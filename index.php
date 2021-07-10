@@ -25,7 +25,13 @@
                                                 <h3 class="blog_type blog_popular text-center">～人気の記事～</h3>
                                             </div>
                                             <?php
-                                                setPostViews(get_the_ID());
+                                                $post_ids = get_posts(array(
+                                                    'posts_per_page'=> -1,
+                                                    'fields'        => 'ids',
+                                                ));
+                                                foreach($post_ids as $post_id) {
+                                                    setPostViews($post_id);
+                                                }
                                                 $args = array(
                                                     'meta_key' => 'post_views_count',
                                                     'orderby' => 'meta_value_num',
