@@ -4,7 +4,7 @@
                     <div class="row">
                         <div class="col-md-12 col-sm-6">
                             <div class="copy-right">
-                                <p>© 2020 RyotaSegawa</a></p>
+                                <p>© 2021 RyotaSegawa</a></p>
                             </div>
                         </div>
                     </div>
