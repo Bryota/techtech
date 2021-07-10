@@ -24,28 +24,46 @@
                                             <div class="col-md-12  mb-20">
                                                 <h3 class="blog_type blog_popular text-center">～人気の記事～</h3>
                                             </div>
+                                            <?php
+                                                setPostViews(get_the_ID());
+                                                $args = array(
+                                                    'meta_key' => 'post_views_count',
+                                                    'orderby' => 'meta_value_num',
+                                                    'order' => 'DESC',
+                                                    'posts_per_page' => 1 
+                                                );
+                                                $query = new WP_Query($args);
+                                                if ($query->have_posts()) :
+                                                    while ($query->have_posts()) :
+                                                        $query->the_post();
+                                            ?>
                                             <div class="col-md-12 blog_popular_artticle">
                                                 <article class="blog-post">
                                                     <div class="post-thumbnail">
-                                                        <a href="/php/laravel/lifecycle/"><img src="/wp-content/uploads/2021/07/laravel-scaled.jpg" alt="アイキャッチ"></a>
+                                                        <a href="<?php the_permalink();?>"><?php the_post_thumbnail(array(900, 540));?></a>
                                                     </div>
                                                     <div class="post-content">
                                                         <div class="post-content-inner">
-                                                            <h3><a href="/php/laravel/lifecycle/">Laravel ライフサイクル 調べてみた</a></h3>
+                                                            <h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
                                                             <ul class="meta-info">
-                                                                <li><a href="/php/laravel/lifecycle/">2021年07月03日</a></li>
+                                                                <li><a href="<?php the_permalink();?>"><?php the_time('Y年m月d日');?> </a></li>
                                                             </ul>
                                                             <p class="post-content-subtitle">これなに？</p>
-                                                            <p>Laravelのライフサイクルを調べてみた</p>
+                                                            <p><?php echo get_post_meta($post->ID, 'これなに', true);?></p>
                                                         </div>
                                                         <div class="post-footer-meta clearfix">
                                                             <div class="read-more-wrapper">
-                                                                <a href="/php/laravel/lifecycle/" class="read-more">記事を読む</a>
+                                                                <a href="<?php the_permalink();?>" class="read-more">記事を読む</a>
                                                             </div>
                                                         </div>                                        
                                                     </div>
                                                 </article>
                                             </div>
+                                            <?php
+                                                    endwhile;
+                                                endif;
+                                                wp_reset_postdata();
+                                            ?>
                                         </div>
                                         <div class="row mt-50">
                                             <div class="col-md-12  mb-20">
@@ -62,7 +80,7 @@
                                                 <div class="col-md-4 col-sm-6 mb-30">
                                                 <article class="blog-post">
                                                     <div class="post-thumbnail new-post-thumbnail">
-                                                        <a href="<?php the_permalink();?>"><?php the_post_thumbnail(array(300, 200));?></a>
+                                                        <a href="<?php the_permalink();?>"><?php the_post_thumbnail(array(300, 300));?></a>
                                                     </div>
                                                     <div class="post-content new-post-content">
                                                         <div class="post-content-inner">
