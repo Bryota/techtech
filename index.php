@@ -93,16 +93,16 @@
                                             <?php
                                                 $cat_posts = get_posts(array(
                                                     'post_type' => 'post', // 投稿タイプ
-                                                    'category' => 2, // カテゴリIDを番号で指定する場合
                                                     'posts_per_page' => 4, // 表示件数
                                                     'orderby' => 'date', // 表示順の基準
-                                                    'order' => 'DESC' // 昇順・降順
+                                                    'order' => 'DESC', // 昇順・降順
+                                                    'tag' => 'recommend'
                                                 ));
                                                 global $post;
                                                 if($cat_posts): foreach($cat_posts as $post): setup_postdata($post); ?>
                                                 <div class="col-md-3 col-sm-6 mb-30 blog_recommend_wrap">
                                                 <article class="blog-post">
-                                                    <div class="post-thumbnail">
+                                                    <div class="post-thumbnail recommend-img">
                                                         <a href="<?php the_permalink();?>"><?php the_post_thumbnail(array(200, 150));?></a>
                                                     </div>
                                                     <div class="post-content">
