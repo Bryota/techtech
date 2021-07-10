@@ -3,8 +3,14 @@
   display: flex;
   justify-content: space-around;
 }
+.ptb-200 {
+  padding: 200px 0;
+}
 .icon-sns {
   font-size: 30px;
+}
+.height-max {
+  height: 85vh;
 }
 /* index */
 .logo_text {
