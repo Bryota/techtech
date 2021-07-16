@@ -81,3 +81,14 @@
 .single-post-title {
   text-transform: none !important;
 }
+
+/* archive */
+.pagination {
+  display: block;
+}
+.page-numbers {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
