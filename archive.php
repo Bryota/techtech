@@ -50,17 +50,17 @@
                                                         </div>                                        
                                                     </div>
                                                 </article>
-                                                <div class="pagination">
-                                                    <?php echo paginate_links( array ( 'type' => 'list',
-                                                        'prev_text' => '«',
-                                                        'next_text' => '»'
-                                                    )); ?>
-                                                </div>
                                             </div>
                                             <?php 
                                                 endwhile;
                                                 endif;
                                             ?>
+                                        </div>
+                                        <div class="pagination">
+                                            <?php echo paginate_links( array ( 'type' => 'list',
+                                                'prev_text' => '«',
+                                                'next_text' => '»'
+                                            )); ?>
                                         </div>
                                     </div>
                                 </div>
