@@ -50,7 +50,12 @@
                                                         </div>                                        
                                                     </div>
                                                 </article>
-                                                <?php if(function_exists('wp_pagenavi')) wp_pagenavi(array('query' => $my_query));?>
+                                                <div class="pagination">
+                                                    <?php echo paginate_links( array ( 'type' => 'list',
+                                                        'prev_text' => '«',
+                                                        'next_text' => '»'
+                                                    )); ?>
+                                                </div>
                                             </div>
                                             <?php 
                                                 endwhile;
