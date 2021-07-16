@@ -50,6 +50,7 @@
                                                         </div>                                        
                                                     </div>
                                                 </article>
+                                                <?php if(function_exists('wp_pagenavi')) wp_pagenavi(array('query' => $my_query));?>
                                             </div>
                                             <?php 
                                                 endwhile;
