@@ -14,8 +14,30 @@
                     </ul>
                 </div>          
                 <!-- Theme standard row Start for Blog -->
-                <div class="adam-standard-row pt-40 pb-80">
+                <div class="adam-standard-row pt-20 pb-80">
                     <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 mb-10">
+                                <h3 class="blog_type blog_popular text-center">～100文字読書～</h3>
+                            </div>
+                        </div>
+                        <div class="row mb-30 books-wrap">
+                        <?php
+                        $books = get_posts(array(
+                            'post_type' => 'books',
+                            'orderby' => 'date',
+                            'order' => 'DESC',
+                        ));
+                        foreach($books as $book): setup_postdata($book); ?>
+                            <div class="col-12 white-bg shadow-bg p-20 pb-10 pt-10">
+                                <p class="mb-0 text-center h3 mt-0"><?php echo get_the_title($book->ID);?></p>
+                                <div class="text-center mb-10 mt-10">
+                                    <a href="<?php echo get_post_meta($book->ID, 'url', true);?>" class="h5" target="_blank"><?php echo get_post_meta($book->ID, 'url', true);?></a>
+                                </div>
+                                <p><?php the_content();?></p>
+                            </div>
+                        <?php endforeach; wp_reset_postdata(); ?>
+                        </div>
                         <div class="row">
                             <div class="col-lg-9 col-md-8 col-sm-12">
                                 <div class="row">
@@ -122,7 +144,6 @@
                                                     'order' => 'DESC', // 昇順・降順
                                                     'tag' => 'recommend'
                                                 ));
-                                                global $post;
                                                 if($cat_posts): foreach($cat_posts as $post): setup_postdata($post); ?>
                                                 <div class="col-md-3 col-sm-6 mb-30 blog_recommend_wrap">
                                                 <article class="blog-post">

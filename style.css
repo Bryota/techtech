@@ -343,6 +343,18 @@ textarea {
 /*-------------------------------------
     PADDING TOP
 ---------------------------------------*/
+.p-10 {
+  padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.p-30 {
+  padding: 30px;
+}
+.p-40 {
+  padding: 40px;
+}
 .pt-0 {
   padding-top: 0;
 }
@@ -675,6 +687,9 @@ textarea {
 }
 .transparent-bg {
   background: transparent;
+}
+.shadow-bg {
+  box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
 }
 
 /*-------------------------------------

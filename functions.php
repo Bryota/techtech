@@ -298,3 +298,18 @@ function setPostViews($postID) {
   }
 }
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+// 100文字読書の追加
+add_action('init', 'create_post_type');
+function create_post_type() {
+  register_post_type('books', 
+    array(
+      'labels' => array(
+      'name' => '100文字読書',
+      'singular_name' => '100文字読書'
+      ),
+      'public' => true,
+      'menu_position' =>5,
+    )
+  );
+}

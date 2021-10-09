@@ -215,4 +215,18 @@
     -----------------------------------*/
     $('.mobile-menu').meanmenu();
 
+    /*--------------------------------
+    TOP BOOKS
+    -----------------------------------*/
+    $('.books-wrap').slick({
+        dots: false,
+        arrows: false,
+        slidesToShow: 1,
+        infinite: true,
+        speed: 1000,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+    });
+
 })(jQuery);
