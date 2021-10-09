@@ -30,7 +30,7 @@
                         ));
                         foreach($books as $book): setup_postdata($book); ?>
                             <div class="col-12 white-bg shadow-bg p-20 pb-10 pt-10">
-                                <p class="mb-0 text-center h3 mt-0 mb-10"><a href="<?php echo get_post_meta($book->ID, 'url', true);?>"><?php echo get_the_title($book->ID);?></a></p>
+                                <p class="mb-0 text-center h3 mt-0 mb-10"><a href="<?php echo get_post_meta($book->ID, 'url', true);?>" target="_blank"><?php echo get_the_title($book->ID);?></a></p>
                                 <p><?php the_content();?></p>
                             </div>
                         <?php endforeach; wp_reset_postdata(); ?>
