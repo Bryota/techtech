@@ -57,11 +57,8 @@ Template Name: 100文字読書
                     ));
                     foreach($books as $book): setup_postdata($book); ?>
                         <div class="col-12 white-bg shadow-bg p-20 pb-10 pt-10 mb-20">
-                            <p class="mb-0 text-center h3 mt-0"><?php echo get_the_title($book->ID);?></p>
-                            <p class="mb-0 text-center h5 mt-1"><?php echo get_the_date('Y年m月d日', $book->ID);?> </p>
-                            <div class="text-center mb-10 mt-10">
-                                <a href="<?php echo get_post_meta($book->ID, 'url', true);?>" class="h5" target="_blank"><?php echo get_post_meta($book->ID, 'url', true);?></a>
-                            </div>
+                            <p class="mb-0 text-center h3 mt-0"><a href="<?php echo get_post_meta($book->ID, 'url', true);?>"><?php echo get_the_title($book->ID);?></a></p>
+                            <p class="mb-0 text-center h5 mt-1 mb-10"><?php echo get_the_date('Y年m月d日', $book->ID);?> </p>
                             <p><?php the_content();?></p>
                         </div>
                     <?php endforeach; wp_reset_postdata(); ?>
