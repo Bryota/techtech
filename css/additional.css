@@ -13,6 +13,9 @@
   height: 85vh;
 }
 /* index */
+.logo a {
+  text-transform: none;
+}
 .logo_text {
   font-size: 15px;
 }
