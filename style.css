@@ -2287,9 +2287,6 @@ a.button.extra-small {
   max-height: 165px;
   width: 100%;
 }
-.blog_popular_artticle .post-thumbnail img {
-  max-height: inherit;
-}
 .blog-post {
   border: 1px solid #e5e5e5;
 }
