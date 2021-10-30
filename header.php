@@ -57,7 +57,7 @@
                         <div class="row">
                             <div class="col-md-5  col-sm-12 ">
                                 <div class="logo">
-                                    <h3><a href="<?php echo home_url(); ?>">てっくテック</a><br class="sp_only"><span class="logo_text">てくてくと日々をつづるブログ</span></h3>
+                                    <h3><a href="<?php echo home_url(); ?>">てっくTech</a><br class="sp_only"><span class="logo_text">てくてくと日々をつづるブログ</span></h3>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
