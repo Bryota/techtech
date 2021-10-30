@@ -66,6 +66,9 @@
   .sidebar-wrap {
     margin-top: 100px;
   }
+  .post-thumbnail img {
+    max-height: 165px;
+  }
 }
 
 @media (min-width: 415px) {
