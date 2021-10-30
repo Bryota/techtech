@@ -35,18 +35,18 @@
     /* ---------------------------------------------
      MASONRY STYLE BLOG.
     ------------------------------------------------ */
-    var $blogContainer = $('.blog-masonry');
-    if ($.fn.imagesLoaded && $blogContainer.length > 0) {
-        imagesLoaded($blogContainer, function() {
-            setTimeout(function() {
-                $blogContainer.isotope({
-                    itemSelector: '.post-grid-item',
-                    layoutMode: 'masonry'
-                });
-            }, 500);
+    // var $blogContainer = $('.blog-masonry');
+    // if ($.fn.imagesLoaded && $blogContainer.length > 0) {
+    //     imagesLoaded($blogContainer, function() {
+    //         setTimeout(function() {
+    //             $blogContainer.isotope({
+    //                 itemSelector: '.post-grid-item',
+    //                 layoutMode: 'masonry'
+    //             });
+    //         }, 500);
 
-        });
-    } 
+    //     });
+    // } 
 
     /*-------------------------------------------
         SCROLL TO TOP BUTTON

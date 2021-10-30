@@ -272,7 +272,7 @@
   Small Mobile
 ---------------------------------------------------*/
 @media (max-width: 767px) {
-.container {width:300px}	
+.container {width:90%}	
 .portfolio-column-count-3 .portfolio-item {
   width: 100%;
 }
