@@ -2286,6 +2286,9 @@ a.button.extra-small {
 .post-thumbnail img {
   width: 100%;
 }
+.new-post-thumbnail img {
+  max-height: 165px;
+}
 .blog-post {
   border: 1px solid #e5e5e5;
 }
