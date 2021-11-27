@@ -2427,7 +2427,7 @@ a.button.extra-small {
   box-shadow: none;
 }
 .single-blog-post-area img {
-  width: 100%;
+  width: auto;
 }
 .single-blog-post-area .blog-post-title {
   font-size: 24px;
