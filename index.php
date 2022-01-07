@@ -180,6 +180,7 @@
             </div>
             <?php get_footer();?>
             <script>
+                window.dataLayer = window.dataLayer || [];
                 dataLayer.push({
                     'test': 'testdata'
                 });
