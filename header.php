@@ -35,6 +35,29 @@
         gtag('config', 'UA-163452531-1');
         </script>
         <!-- MODERNIZE JS -->
+        <script>
+            window.dataLayer = window.dataLayer || []
+            dataLayer.push({
+            'transactionId': '1234',
+            'transactionAffiliation': 'testgtm',
+            'transactionTotal': 11.11,
+            'transactionTax': 1.11,
+            'transactionShipping': 1,
+            'transactionProducts': [{
+                'sku': 'oo11',
+                'name': 'test1',
+                'category': 'test',
+                'price': 11.1,
+                'quantity': 1
+            },{
+                'sku': 'oo22',
+                'name': 'test2',
+                'category': 'test',
+                'price': 11.1,
+                'quantity': 1
+            }]
+            });
+        </script>
         <!-- Google Tag Manager -->
             <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

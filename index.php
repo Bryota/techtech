@@ -179,9 +179,3 @@
                 <!-- Theme standard row End for Blog -->               
             </div>
             <?php get_footer();?>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                dataLayer.push({
-                    'test': 'testdata'
-                });
-            </script>
