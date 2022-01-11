@@ -48,13 +48,15 @@
                 'name': 'test1',
                 'category': 'test',
                 'price': 11.1,
-                'quantity': 1
+                'quantity': 1,
+                'variant': 'red'
             },{
-                'sku': 'oo22',
-                'name': 'test2',
+                'sku': 'oo11',
+                'name': 'test1',
                 'category': 'test',
                 'price': 11.1,
-                'quantity': 1
+                'quantity': 1,
+                'variant': 'blue'
             }]
             });
         </script>
