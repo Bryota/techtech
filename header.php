@@ -60,7 +60,6 @@
     </script>
     <!-- End Google Tag Manager -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.8.3.min.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8039290321071206" crossorigin="anonymous"></script>
     <?php wp_head(); ?>
 </head>
 
